@@ -51,7 +51,7 @@ public class DoubleLinkedList<T1, T2> {
 	}
 	
 	public void insertAfter(ListNode<T1, T2> relative, T1 key, T2 data) {
-		if (data == null || relative == null || relative == tail) {
+		if (key == null || data == null || relative == null || relative == tail) {
 			return;
 		}
 		ListNode<T1, T2> node = new ListNode<T1, T2>(key, data);
@@ -69,7 +69,7 @@ public class DoubleLinkedList<T1, T2> {
 	}
 	
 	public void insertBefore(ListNode<T1, T2> relative, T1 key, T2 data) {
-		if (data == null || relative == null || relative == tail) {
+		if (key == null || data == null || relative == null || relative == head) {
 			return;
 		}
 		ListNode<T1, T2> node = new ListNode<T1, T2>(key, data);
